@@ -84,7 +84,7 @@ app.use(express.static(path.resolve(__dirname, "live-chat-client", "build")));
 
 // Serve the index.js file for all routes except API routes
 app.get("*", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "live-chat-client", "build", "index.js"));
+  res.sendFile(path.resolve(__dirname, "live-chat-client", "build", "index.html"));
 });
 
 // Route handler for the root URL
